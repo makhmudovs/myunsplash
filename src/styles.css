@@ -1,0 +1,28 @@
+.my-2 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.card {
+  position: relative;
+  height: fit-content;
+}
+.card-img-overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+}
+.card-img-top {
+  transition: 0.5s ease;
+}
+.card:hover .card-img-top {
+  opacity: 0.6;
+}
+.card:hover .card-img-overlay {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .my-2 {
+    margin: 20px 0 !important;
+  }
+}
